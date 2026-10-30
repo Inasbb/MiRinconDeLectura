@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #faf8f3;
-    color: #263c59;
+    color: #d166b1;
     margin: 0;
 }
 
@@ -20,7 +20,7 @@ p {
 
 /*CABECERA*/
 #cabecera {
-    background-color: #263c59;
+    background-color: #8e44ad;
     color: white;
     text-align: center;
     padding: 25px;
