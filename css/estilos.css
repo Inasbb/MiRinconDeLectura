@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #faf8f3;
-    color: #d166b1;
+    color: #263c59;
     margin: 0;
 }
 
@@ -20,27 +20,50 @@ p {
 
 /*CABECERA*/
 #cabecera {
-    background-color: #8e44ad;
+    background-color: #263c59;
     color: white;
     text-align: center;
     padding: 25px;
+
+}
+
+.identidad {
+    display: flex;
 }
 
 #cabecera h1 {
     font-size: 36px;
     margin: 10px;
+    display: flex;
+    justify-content: left;
+
+
 }
 
 #cabecera p {
     font-style: italic;
+    margin: 10px;
+    display: flex;
+    justify-content: left;
+
 
 }
+
+#cabecera img {
+    width: 100px;
+    display: flex;
+    justify-content: left; margin: 10px;
+}
+
+
 
 /*NAVEGACIÓN*/
 
 nav {
     margin-top: 20px;
-
+    display: flex;
+    margin-top: auto;
+    margin-left: auto;
 }
 
 nav a {
