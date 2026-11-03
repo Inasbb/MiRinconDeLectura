@@ -73,11 +73,23 @@ nav a {
     text-decoration: none;
     margin: 10px;
     padding: 8px;
+}
+
+nav a:focus {
+    outline: 3px solid yellow;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 8px;
 
 }
 
+a:visited {
+    color: purple;
+}
+
 nav a:hover {
-    background-color: #1976b9;
+    background-color: #c01111;
     border-radius: 5px;
 }
 
@@ -85,6 +97,8 @@ nav a.activo {
     background-color: #1976b9;
     border-radius: 5px;
 }
+
+
 
 /*BIENVENIDA*/
 
@@ -118,6 +132,14 @@ nav a.activo {
     border-radius: 6px;
 }
 
+.boton:active {
+    background-color: #c01111;
+    border-radius: 5px;
+}
+
+
+
+
 /*GÉNEROS*/
 
 #generos {
@@ -125,6 +147,10 @@ nav a.activo {
     padding: 20px;
     text-align: center;
 
+}
+
+.genero:hover {
+    background-color: #9bbde9;
 }
 
 .genero {
@@ -161,7 +187,7 @@ nav a.activo {
 }
 
 #portada {
-    width: 15%; 
+    width: 15%;
 }
 
 .cita {
@@ -202,6 +228,11 @@ nav a.activo {
     font-size: 15px;
 }
 
+.tarjeta:hover {
+    border: 2px solid purple;
+
+}
+
 /*OTROS LIBROS*/
 #otro-libros {
     background-color: #fff5e5;
@@ -212,6 +243,25 @@ nav a.activo {
 
 #otros-libros li {
     margin: 8px;
+}
+
+#otros-libros ul li:first-child {
+    color: #1976b9;
+    font-weight: bold;
+}
+
+#otros-libros ul li:last-child {
+    color: rgb(3, 99, 3);
+    font-weight: bold;
+}
+
+#otros-libros li:nth-child(even) {
+    background-color: #a0a2a3;
+
+}
+
+#otros-libros li:nth-child(3) {
+    font-size: 20px;
 }
 
 footer {
