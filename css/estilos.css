@@ -52,7 +52,9 @@ p {
 #cabecera img {
     width: 100px;
     display: flex;
-    justify-content: left; margin: 10px;
+    justify-content: left;
+    margin: 10px;
+
 }
 
 
@@ -89,13 +91,22 @@ nav a.activo {
 #inicio {
     padding: 20px;
     background-color: white;
+    display: flex;
 
 }
 
 #inicio img {
     width: 300px;
     border-radius: 10px;
+
 }
+
+#biblioteca {
+    width: 70%
+}
+
+
+
 
 .boton {
     display: inline-block;
@@ -113,6 +124,7 @@ nav a.activo {
     background-color: #e8f2fb;
     padding: 20px;
     text-align: center;
+
 }
 
 .genero {
@@ -122,9 +134,10 @@ nav a.activo {
     width: 170px;
     min-height: 130px;
     margin: 8px;
-    padding: 15px;
+    padding: 20px;
     border: 15px;
     border-radius: 8px;
+    height: 200px
 }
 
 .genero h3 {
@@ -138,11 +151,17 @@ nav a.activo {
     padding: 20px;
     margin-top: 20px;
     border-radius: 10px;
+    display: flex;
 }
 
 .portada {
     width: 130px;
     border-radius: 5px;
+
+}
+
+#portada {
+    width: 15%; 
 }
 
 .cita {
@@ -152,6 +171,8 @@ nav a.activo {
     text-align: center;
     border-radius: 6px;
 }
+
+
 
 /*CATÁLOGO*/
 
