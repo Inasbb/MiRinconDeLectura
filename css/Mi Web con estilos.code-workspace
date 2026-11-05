@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../Mi Web con estilos"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "MiRinconDeLectura"
+	}
+}
