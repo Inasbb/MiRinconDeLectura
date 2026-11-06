@@ -72,6 +72,7 @@ nav a.activo {
 #inicio img {
     width: 300px;
     border-radius: 10px;
+
 }
 
 .boton {
@@ -82,7 +83,18 @@ nav a.activo {
     margin: 10px;
     text-decoration: none;
     border-radius: 6px;
+    transition: transform 3s
 }
+
+.boton:hover {
+    /*transform: scale(0.9)*/
+    /*transform: translateY(-15px)*/
+    transform: scale(1.1);
+    background-color: rgb(7, 139, 139);
+
+
+}
+
 
 /*GÉNEROS*/
 
@@ -122,6 +134,11 @@ nav a.activo {
     border-radius: 5px;
 }
 
+.portada:hover {
+    /* transform: scale(1.5); */
+    transform: rotate(15deg)
+}
+
 .cita {
     background-color: #fff5e5;
     padding: 12px;
@@ -148,6 +165,8 @@ nav a.activo {
     padding: 15px;
     margin: 8px;
     text-align: center;
+    transition: transform 0.5s, box-shadow 0.5s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.486);
 }
 
 .tarjeta h3 {
@@ -156,6 +175,16 @@ nav a.activo {
 
 .tarjeta p {
     font-size: 15px;
+}
+
+.tarjeta:hover {
+    /*transform: translateX(20PX);*/
+    /*transform: translateY(20PX);*/
+    /*transform: translate(20px, 20px)*/
+    /*transform: scale(1.1) rotate(5deg)*/
+    /*transform: translate(20px, -20px);*/
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.651)
 }
 
 /*OTROS LIBROS*/
@@ -180,3 +209,110 @@ footer {
 footer a {
     color: white;
 }
+
+/*@keyframes cambiarColor {
+    from {
+        color: #1976b9;
+    }
+
+    to {
+        color: red;
+    }
+}*/
+
+/*@keyframes cambiarColor {
+    0% {
+        color: #1976b9;
+    }
+
+    50% {
+        color: rgb(78, 202, 84);
+    }
+
+    100% {
+        color: red
+    }
+}*/
+
+/*@keyframes mover {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(200px);
+    }
+}
+
+.tarjeta { animation: mover 3s ease-out;}*/
+
+/*@keyframes girar {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+.portada {animation:  girar 3s}*/
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#inicio {
+    animation: aparecer 2s;
+}
+
+@keyframes palpitar {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.portada {
+    animation: palpitar 1s infinite;
+}
+
+@keyframes opacidad {
+    from {
+        opacity: 0
+    }
+}
+    ;
+
+    to {
+        opacity: 1;
+    }
+
+    #cabecera h1 {
+        animation: aparecer 1s 2s backwards;
+    }
+
+
+
+
+    h1 {
+        animation: cambiarColor 3s;
+        animation-name: cambiarColor;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+
+    }
