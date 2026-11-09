@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      
+    }
+
+    .caja {
+
+        padding: 10px;
+        text-align: center;
+
+    }
+
+
+    .pagina {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: "cabecera cabecera" "contenido lateral" "pie pie";
+        gap: 15px;
+    }
+
+    header {
+        grid-area: cabecera;
+        background-color: blue;
+    }
+
+    main {
+        grid-area: contenido;
+        background-color: green;
+        min-height: 200px;
+    }
+
+
+    aside {
+        grid-area: lateral;
+        background-color: yellow;
+    }
+
+    footer {grid-area: pie; background-color: pink ;}
+
+    .roja {
+        background-color: red;
+        
+        
+    }
+
+    .azul {
+        background-color: blue;
+
+
+    }
+
+    .verde {
+        background-color: green;
+
+
+    }
+
+    .amarillo {
+        background-color: yellow;
+
+    }
+
+    .naranja {
+        background-color: orange;
+        ;
+    }
+
+    .rosa {
+        background-color: pink;
+    }
+</style>
+
+
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="caja roja"> <img src="./img/harry-potter.jpg" alt="harry-potter"> Caja 1</div>
+        <div class="caja azul"> <img src="./img/principito.jpg" alt="principito">Caja 2</div>
+        <div class="caja verde"><img src="./img/historia-interminable.jpg" alt="historia-interminable">Caja 3</div>
+        <div class="caja amarillo"><img src="./img/harry-potter.jpg" alt="harry-potter">Caja 4</div>
+        <div class="caja naranja"><img src="./img/principito.jpg" alt="principito"> Caja 5</div>
+        <div class="caja rosa"> <img src="./img/historia-interminable.jpg" alt="historia-interminable">Caja 6</div>
+
+
+    </div>
+
+<!--<div class="pagina"> 
+        <header>Cabecera</header>
+        <main>
+            <h2>Contenido principal</h2>
+            <p>Aquí aparecería el contenido de nuestra web.</p>
+        </main>
+        <aside> Barra lateral </aside>
+        <footer>Pie de página</footer>
+
+    </div>-->
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    .contenedor {
+        display: flex;
+        gap: 10px;
+        position: relative;
+        background-color: gray;
+        height: 3000px;
+    }
+
+    .tarjeta {
+        
+        width: 300px;
+        border: 1px solid grey;
+        top: 20%;
+        height: 8000px;
+    }
+
+    .tarjeta img {
+        position: sticky;
+        display: block;
+        top: 20px;
+        height: 700px;
+    }
+
+    .oferta {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        background-color: red;
+        padding: 8px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .boton {
+        position: fixed;
+        top: 10%;
+        left: 92%;
+        background-color: red;
+        padding: 15px;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 10px;
+    
+    }
+
+    .caja {
+        width: 120px;
+        height: 100px;
+        padding: 10px;
+        text-align: center;
+
+    }
+
+
+    .roja {
+        background-color: red;
+
+        top: 20px;
+        left: 30px;
+    }
+
+    .azul {
+        background-color: blue;
+        position: relative;
+        top: 30px;
+        left: 40px;
+
+
+
+    }
+
+    .verde {
+        background-color: green;
+        right: 20px;
+
+    }
+
+    .amarillo {
+        background-color: yellow;
+        position: fixed;
+        position: sticky;
+        top: 0%;
+    }
+</style>
+
+<body>
+    <div class="contenedor">
+
+        <div class="caja roja">Caja 1</div>
+        <div class="caja azul">Caja 2</div>
+        <div class="caja verde">Caja 3</div>
+        <div class="caja amarillo">Caja 4</div>
+
+    </div>
+
+    <div class="tarjeta"> <img src="./img/harry-potter.jpg" alt="Producto en oferta">
+        <span class="oferta">OFERTA</span>
+    </div>
+    <a href="#" class="boton">oferta</a>
+
+</body>
+
+</html>
